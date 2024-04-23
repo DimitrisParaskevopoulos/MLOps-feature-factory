@@ -14,8 +14,7 @@ import os
 warnings.filterwarnings("ignore")
 
 # import json file with data
-# with open('app/data.json', 'r') as json_file: # when not running docker MAYBE USELESS
-with open('data.json', 'r') as json_file:  # when running docker
+with open('data.json', 'r') as json_file:
     data = json.load(json_file)
 
 # prepare first dataframe from json file
@@ -45,7 +44,7 @@ es = es.add_dataframe(
     dataframe_name="quests",
     dataframe=quests_df,
     index="quest_ID",
-    # time_index="quest_date", #FIX IT
+    # time_index="quest_date",
     logical_types={  # be careful with type of data
         "quest_status": Categorical,
         "duration": Categorical,
@@ -129,5 +128,5 @@ async def get_infooo(player_id: int):
 
 
 # run the FastAPI app with Uvicorn in the following host, port when not running docker
-if __name__ == "__main__":
-   uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#   uvicorn.run(app, host="0.0.0.0", port=8000)
