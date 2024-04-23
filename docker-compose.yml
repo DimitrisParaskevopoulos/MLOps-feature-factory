@@ -1,0 +1,10 @@
+version: "3"
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - ./logs:/app/logs
+    environment:
+        - TZ=Europe/Athens
