@@ -1,5 +1,5 @@
 # Feature Engineering Pipeline
-This project streamlines the process of feature engineering within a machine learning operations (MLOps) framework using an automated tool named Featuretools. It's designed to efficiently generate meaningful features from raw data, facilitating more effective predictive models.
+This project streamlines the process of feature engineering using an automated tool named Featuretools. It's designed to efficiently generate meaningful features from relational datasets, facilitating more effective predictive models to support MLOps.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
